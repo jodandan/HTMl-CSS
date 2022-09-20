@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+
+  .item5 { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  body {
+    margin:80px;
+    margin-left:90px;
+    margin-right:90px;
+  }
+  </style>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1"><h1><a href="gridmodule.html">The path to my goal<a/></h1></div>
+      <div class="item2">
+         <ul>
+            <li><a href="goal.html">goal</a></li>
+            <li><a href="reason.html" > reason</a></li>
+            <li><a href="process.html" > process</a></li>
+            <li><a href="curriculum.html" > curriculum</a></li>
+          </ul>
+        </div>
+      <div class="item3">
+          <p>
+            <h2>목표</h2>
+            저의 목표는 백엔드 개발자가 되는 것 입니다. 정확히는 풀스택 개발자의 시각을 가진 웹 개발자가 되고 싶습니다.<br><br>
+            웹 브라우저와 DB를 동시에 다루는 것은 쉽지 않겠지만, 혼자서 웹페이지 하나를 만들 수 있는 능력을 가지고 싶습니다. <br><br>
+            시대가 갈수록 백엔드와 프론트엔드의 경계가 갈수록 희미해지고 있지만, 웹 개발자라면 한 분야의 전문가가 되어야 한다고 생각하기에
+            백엔드 개발자가 목표입니다.
+          </p>
+      </div>
+
+      <div class="item5"><a href="reason.html">다음 글</a></div>
+    </div>
+
+    </body>
+    </html>

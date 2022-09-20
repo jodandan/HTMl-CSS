@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+
+  .item5 { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #6183A8;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  body {
+    margin:80px;
+    margin-left:90px;
+    margin-right:90px;
+  }
+  </style>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1"><h1><a href="gridmodule.html">The path to my goal<a/></h1></div>
+      <div class="item2">
+         <ul>
+            <li><a href="goal.html">goal</a></li>
+            <li><a href="reason.html" > reason</a></li>
+            <li><a href="process.html" > process</a></li>
+            <li><a href="curriculum.html" > curriculum</a></li>
+          </ul>
+        </div>
+      <div class="item3">
+          <p>
+            <h2>커리큘럼</h2>
+            1. html<br>
+            2. CSS<br>
+            3. JavaScript<br>
+            4. Home server<br>
+            5. Domain Name System<br>
+            6. Python<br>
+            7. PHP<br>
+            8. PHP, MySQL<br>
+            9. DATABASE1<br>
+            10. DATABASEE2 - MySQL<br>
+            final. Ajax
+
+
+
+
+          </p>
+      </div>
+
+      <div class="item5"><a href="gridmodule.html">처음으로</a></div>
+    </div>
+
+    </body>
+    </html>

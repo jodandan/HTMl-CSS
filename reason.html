@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+
+  .item5 { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #F49696;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  body {
+    margin:80px;
+    margin-left:90px;
+    margin-right:90px;
+  }
+  </style>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1"><h1><a href="gridmodule.html">The path to my goal<a/></h1></div>
+      <div class="item2">
+         <ul>
+            <li><a href="goal.html">goal</a></li>
+            <li><a href="reason.html" > reason</a></li>
+            <li><a href="process.html" > process</a></li>
+            <li><a href="curriculum.html" > curriculum</a></li>
+          </ul>
+        </div>
+      <div class="item3">
+          <p>
+            <h2>이유</h2>
+              저는 우리가 살고 있는 시대에서 수동적으로 살았던 기억이 많이 있습니다. <br><br>
+              남들이 공부해서 똑같이 공부 하였고, <br>
+              남들이 돈 잘번다고 하는 과에 들어가 학과를 정했고,<br>
+              그렇게 수동적으로 인생을 살아보니 마음 한켠이 답답했습니다. <br><br>
+              내가 하고싶은게 아니라, 해야만 하는것. 그것으로부터 벗어나고 싶었습니다.<br><br>
+              내가 하고 싶은 것과 , 내가 함으로써 남들을 도울 수 있는 행위가 존재하는 컴퓨터공학이였습니다.<br>
+              그 중에서도 남녀노소 ,나이가 무관하게 사람들이 평생 쳐다볼 웹페이지가 유독 관심이 있었습니다. <br>
+              그래서 웹개발자를 선택하게 되었습니다.
+          </p>
+      </div>
+
+      <div class="item5"><a href="process.html">다음글</a></div>
+    </div>
+
+    </body>
+    </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+
+  .item5 { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #FFD970;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  body {
+    margin:80px;
+    margin-left:90px;
+    margin-right:90px;
+  }
+  </style>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1"><h1><a href="gridmodule.html">The path to my goal<a/></h1></div>
+      <div class="item2">
+         <ul>
+            <li><a href="goal.html">goal</a></li>
+            <li><a href="reason.html" > reason</a></li>
+            <li><a href="process.html" > process</a></li>
+            <li><a href="curriculum.html" > curriculum</a></li>
+          </ul>
+        </div>
+      <div class="item3">
+          <p>
+            <h2>과정</h2>
+            <p>
+            Youtube 채널 " <a href="https://www.youtube.com/c/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A91/featured" target="_blank">생활코딩</a> " 님의 도움을 받아 커리큘렴을 작성하였습니다.<br>
+            우선 HTML 을 기본적인 HTML을 익혀 웹 브라우저의 전반적인 구조를 알고 난 뒤, <br>
+            CSS 를 이용하여 기본 웹 브라우저에 더욱 살을 붙여 기반을 다질 예정입니다.<br><br>
+            그 후 JavaScript를 학습하여 본격적으로 웹브라우저를 사용하는 사용자와 상호작용 하는 법에 대해 학습할 것 입니다.<br>
+            다음은 제가 만든 것을 본격적으로 세상에 알릴 수 있는 서버를 여는법, 서버에 대해 학습할 것이고,<br><br>
+            마지막으로는 서버를 운영할 수 있는 언어들, 서버를 조작하는 언어들에 대해 배울 것 입니다.
+            </p>
+      </div>
+
+      <div class="item5"><a href="curriculum.html">다음글</a></div>
+    </div>
+
+    </body>
+    </html>
